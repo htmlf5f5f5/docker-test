@@ -12,10 +12,6 @@ services:
       - CASSANDRA_RPC_ADDRESS=0.0.0.0
       - MAX_HEAP_SIZE=512M
       - HEAP_NEWSIZE=100M
-    deploy:
-      resources:
-        limits:
-          memory: 1G
 
   cassandra-2:
     build: .
